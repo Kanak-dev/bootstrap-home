@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Bootstrap 5 Responsive Landing Page Design</title>
+	<!-- All CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	
+	<link href="" rel="stylesheet">
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+    * {
+	font-family: 'Montserrat', sans-serif;
+    }
+    .navbar{
+        background-color:rgb(22, 199, 158); 
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 15%);
+        justify-content: space-between;
+     }
+        
+    .navbar a{
+    color: white;
+    font-size: 18px;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-weight: 500;   
+    text-decoration: none;
+    transition: ease 0.40s;
+    }
+
+    .navbar a:hover,.navbar a.active{
+    background: white;
+    color: black;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 5px;
+    
+    }
+
+    .navbar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    }
+ 
+    .navbar button:hover {
+    background-color:rgb(91, 248, 209) ;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+
+    }
+
+    .banner{
+    width:100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .banner img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    }
+
+    .content{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(1, 0, 5, 0.3),rgba(4, 1, 17, 0.3));
+
+    }
+    .image{
+    background-image: url(./files/l1.jpg);
+    }
+    .title{
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 4vh;
+    color: rgb(255, 255, 255);
+    padding: 14px 17px;
+    size: 100%;
+    text-align: center;
+    vertical-align: center;
+    }
+
+    .title h1{
+    font-size: 10vh;
+    text-shadow: 2px black;
+    transition: ease 0.3s;
+    }
+
+    .title h1:hover{
+    color:transparent;
+    -webkit-text-stroke: 1px white;
+    
+    }
+
+    .button{
+    display: inline-block;
+    margin-top:5vh;
+    font-size: 25px;
+    padding: 10px 30px;
+    color:rgb(22, 199, 158);
+    background-color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: ease 0.30s;
+    }
+
+    .button:hover{
+    transform: scale(1.1);
+    color: white;
+    background-color:rgb(22, 199, 158);
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.4);
+    padding: 10px 30px;
+    }
+    </style>
+</head>
+<body>
+
+
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between  navbar">
+        <div class="col-md-3 mb-2 mb-md-0 " style=" padding-left: 30px;">
+          
+            <img src="./files/logo.png" class="bi" width="150" height="40" role="img" aria-label="Bootstrap" >
+        </div>
+  
+        <ul class="  nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 ">Home</a></li>
+          <li><a href="#" class="nav-link px-2">Tours</a></li>
+          <li><a href="#" class="nav-link px-2">Services</a></li>
+          <li><a href="#" class="nav-link px-2">Packages</a></li>
+          <li><a href="#" class="nav-link px-2">Bookings</a></li>
+        </ul>
+  
+        <div class="col-md-3 text-end" style="padding-right: 40px;">
+          <button type="button" class="btn btn--primary  button" style=" margin-top:0px;  height: 45px; text-align: center ; padding:  5px  25px ; border-radius: 24px; font-weight: 500; font-size: 20px;">Login</button>
+
+        </div>
+      </header>
+<div class="image banner">
+      <div class="title">
+        <h1>VOYAGE</h1>
+        <p>Plan your trip with us and travel around the world with the most affordable packages!<br>Where Every Mile is a Smile!!</p>
+        <a href="./register.html" class="button">Register Now!</a>
+    </div>
+    
+</div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
